@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/BackEnd/Guide/GuideServer/pom.xml" />
+        <option value="$PROJECT_DIR$/BackEnd/Hotel/Hotel/pom.xml" />
+        <option value="$PROJECT_DIR$/BackEnd/Package/Package/pom.xml" />
+        <option value="$PROJECT_DIR$/BackEnd/User/User/pom.xml" />
+        <option value="$PROJECT_DIR$/BackEnd/Vehicle/Vehicle/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
