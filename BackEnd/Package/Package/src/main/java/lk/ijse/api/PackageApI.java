@@ -34,6 +34,11 @@ public class PackageApI {
         packageService.updatePackage(packageDTO);
         return new ResponseEntity<>(packageDTO.getPackageId()+"Successfully Updated !", HttpStatus.OK);
     }
+    @DeleteMapping(params = "id")
+    public ResponseEntity<String> deletePakage(String id){
+        packageService.deletePackage(id);
+        return new ResponseEntity<>(id+"Package Deleted !",HttpStatus.OK);
+    }
     @GetMapping(params = "id")
     public ResponseEntity<PackageDTO>findById(String id){
       return new  ResponseEntity<>(packageService.findById(id),HttpStatus.OK);
@@ -43,11 +48,7 @@ public class PackageApI {
     public ResponseEntity<List<PackageDTO>>getAll(){
         return new ResponseEntity<>(packageService.getAll(),HttpStatus.OK);
     }
-    @DeleteMapping(params = "id")
-    public ResponseEntity<String> deletePakage(String id){
-        packageService.deletePackage(id);
-        return new ResponseEntity<>(id+"Package Deleted !",HttpStatus.OK);
-    }
+
 
 
 }

@@ -14,4 +14,7 @@ public class Converter {
     public UserEntity UserDtoToUserEntity(UserDto userDto){
         return modelMapper.map(userDto,UserEntity.class);
     }
+    public UserDto userEntityToUserDto(UserEntity userEntity){
+        return modelMapper.map(userEntity, UserDto.class);
+    }
 }

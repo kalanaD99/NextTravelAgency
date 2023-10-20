@@ -18,6 +18,19 @@ UserService service;
         service.saveUser(userDto);
         return new ResponseEntity<>(userDto.getId()+"User Saved !.", HttpStatus.OK);
     }
-
+    @PutMapping
+    public ResponseEntity<String> UpdateUser(@RequestBody UserDto userDto){
+        service.updateUser(userDto);
+        return new ResponseEntity<>(userDto.getId()+"User Updated",HttpStatus.OK);
+    }
+    @DeleteMapping
+    public ResponseEntity<String>deleteUser(String id){
+        service.deleteUser(id);
+        return new ResponseEntity<>(id+ "Deleted Successfully!",HttpStatus.OK);
+    }
+    @GetMapping(params = "id")
+    public ResponseEntity<UserDto>findById(String id){
+        return new ResponseEntity<>(service.findById(id),HttpStatus.OK);
+    }
 
 }

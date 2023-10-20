@@ -48,7 +48,7 @@ public class PackageServiceIMPL implements PackageService {
     }
 
     @Override
-    public List<PackageDTO> getAll() {
+    public List<PackageDTO> getAll()  {
         return converter.packageEntityListToPackageDTOList(packageRepo.findAll());
     }
 
