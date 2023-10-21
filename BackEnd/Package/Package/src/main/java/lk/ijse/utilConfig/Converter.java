@@ -27,4 +27,5 @@ public class Converter {
     public List<PackageDTO> packageEntityListToPackageDTOList(List<PackageEntity> packages){
         return modelMapper.map(packages,new TypeToken<List<PackageDTO>>(){}.getType());
     }
+
 }
