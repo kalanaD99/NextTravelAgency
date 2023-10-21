@@ -49,6 +49,4 @@ public class PackageApI {
         return new ResponseEntity<>(packageService.getAll(),HttpStatus.OK);
     }
 
-
-
 }

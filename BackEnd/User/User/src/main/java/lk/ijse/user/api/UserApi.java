@@ -7,6 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/v2/user")
 public class UserApi {
@@ -32,5 +34,8 @@ UserService service;
     public ResponseEntity<UserDto>findById(String id){
         return new ResponseEntity<>(service.findById(id),HttpStatus.OK);
     }
-
+    @GetMapping
+    public ResponseEntity<List<UserDto>>getAll(){
+        return new ResponseEntity<>(service.getAll(),HttpStatus.OK);
+    }
 }

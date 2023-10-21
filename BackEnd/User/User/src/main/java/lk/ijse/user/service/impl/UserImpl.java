@@ -10,6 +10,8 @@ import lk.ijse.user.utilConfig.Converter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @Transactional
 public class UserImpl implements UserService {
@@ -48,6 +50,11 @@ public class UserImpl implements UserService {
         if (!repo.existsById(id))
             throw new RuntimeException(id+"User Does Not Exists");
         return converter.userEntityToUserDto(repo.findById(id).get());
+    }
+
+    @Override
+    public List<UserDto> getAll() {
+        return converter.userEntityListToUserDtoList(repo.findAll());
     }
 
 }

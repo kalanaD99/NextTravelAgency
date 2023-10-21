@@ -41,6 +41,14 @@ public class PackageServiceIMPL implements PackageService {
     }
 
     @Override
+    public void deletePackage(String id) {
+        if(!packageRepo.existsById(id)){
+            throw new RuntimeException(id+"package does not exists");
+        }
+        packageRepo.deleteById(id);
+    }
+
+    @Override
     public PackageDTO findById(String id) {
         if (!packageRepo.existsById(id))
             throw new RuntimeException(id+"Package Not Found");
@@ -53,13 +61,7 @@ public class PackageServiceIMPL implements PackageService {
     }
 
 
-    @Override
-    public void deletePackage(String id) {
-        if(!packageRepo.existsById(id)){
-            throw new RuntimeException(id+"package does not exists");
-        }
-        packageRepo.deleteById(id);
-    }
+
 
 
 

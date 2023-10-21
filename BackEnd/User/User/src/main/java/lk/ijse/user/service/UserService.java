@@ -13,4 +13,6 @@ public interface UserService {
     void deleteUser(String id);
 
     UserDto findById(String id);
+
+    List<UserDto>getAll();
 }
