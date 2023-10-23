@@ -1,5 +1,6 @@
 package lk.ijse.user.dto;
 
+import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,5 +16,6 @@ public class CustomerDto {
     private String NIC;
     private String Username;
     private String Password;
+    private String ProfilePic;
 
 }

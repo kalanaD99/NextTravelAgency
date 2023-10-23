@@ -6,13 +6,13 @@ import lk.ijse.user.dto.UserDto;
 import java.util.List;
 
 public interface CustomerService {
-    void saveCustomerr(CustomerDto customerDto);
+    void saveCustomer(CustomerDto customerDto);
 
-    void updateCustomer(CustomerDto customerDto);
+   // void updateCustomer(CustomerDto customerDto);
 
-    void deleteCustomer(String id);
+    //void deleteCustomer(String id);
 
-    UserDto findById(String id);
+   // CustomerDto findById(String id);
 
-    List<UserDto> getAll();
+   // List<CustomerDto> getAll();
 }

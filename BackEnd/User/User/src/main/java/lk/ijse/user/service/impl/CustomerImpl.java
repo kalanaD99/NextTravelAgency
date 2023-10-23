@@ -24,29 +24,12 @@ public class CustomerImpl implements CustomerService {
     @Autowired
     Converter converter;
 
-
     @Override
-    public void saveCustomerr(CustomerDto customerDto) {
-        if (repo.existsById(customerDto.getCustomerId()))
-            throw new RuntimeException(customerDto.getCustomerId()+"Customer Already Exists!");
+    public void saveCustomer(CustomerDto customerDto) {
+        if (repo.existsById(customerDto.getCustomerId())){
+            throw new RuntimeException(customerDto.getCustomerId()+" Customer Already Exists..!");
+        }
+        repo.save(converter.customerDtoToCustomerEntity(customerDto));
     }
-
-    @Override
-    public void updateCustomer(CustomerDto customerDto) {
-            if (!repo.existsById(customerDto.getCustomerId())
-            throw new RuntimeException(customerDto.getCustomerId() + "Customer does not Exists!");
-
-
-    }
-
-    @Override
-    public void deleteCustomer(String id) {
-
-    }
-
-    @Override
-    public UserDto findById(String id) {
-
-
-
+}
 
