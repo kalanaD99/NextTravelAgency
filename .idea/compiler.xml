@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Vehicle" />
+        <module name="EurekaServer" />
         <module name="Package" />
         <module name="User" />
         <module name="GuideServer" />
@@ -17,6 +18,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="EurekaServer" options="-parameters" />
       <module name="GuideServer" options="-parameters" />
       <module name="Hotel" options="-parameters" />
       <module name="Package" options="-parameters" />

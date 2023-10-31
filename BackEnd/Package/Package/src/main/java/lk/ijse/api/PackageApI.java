@@ -35,7 +35,7 @@ public class PackageApI {
         return new ResponseEntity<>(packageDTO.getPackageId()+"Successfully Updated !", HttpStatus.OK);
     }
     @DeleteMapping(params = "id")
-    public ResponseEntity<String> deletePakage(String id){
+    public ResponseEntity<String> deletePackage(String id){
         packageService.deletePackage(id);
         return new ResponseEntity<>(id+"Package Deleted !",HttpStatus.OK);
     }

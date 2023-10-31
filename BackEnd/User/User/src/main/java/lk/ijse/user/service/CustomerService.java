@@ -8,11 +8,11 @@ import java.util.List;
 public interface CustomerService {
     void saveCustomer(CustomerDto customerDto);
 
-   // void updateCustomer(CustomerDto customerDto);
+    void updateCustomer(CustomerDto customerDto);
 
-    //void deleteCustomer(String id);
+   void deleteCustomer(String id);
 
-   // CustomerDto findById(String id);
+    CustomerDto findById(String id);
 
-   // List<CustomerDto> getAll();
+    List<CustomerDto> getAll();
 }

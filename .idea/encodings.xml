@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/BackEnd/Guide/GuideServer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/BackEnd/Hotel/Hotel/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BackEnd/MicroService/EurekaServer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/BackEnd/Package/Package/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/BackEnd/User/User/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/BackEnd/Vehicle/Vehicle/src/main/java" charset="UTF-8" />

@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/BackEnd/Package/Package/pom.xml" />
         <option value="$PROJECT_DIR$/BackEnd/User/User/pom.xml" />
         <option value="$PROJECT_DIR$/BackEnd/Vehicle/Vehicle/pom.xml" />
+        <option value="$PROJECT_DIR$/BackEnd/MicroService/EurekaServer/pom.xml" />
       </list>
     </option>
   </component>
