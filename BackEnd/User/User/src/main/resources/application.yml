@@ -26,8 +26,8 @@ spring:
       hibernate:
         format_sql: true
   application:
-    name: PACKAGE-SERVER
+    name: USER-SERVER
 server:
-  port: 8085
+  port: 8090
   servlet:
-    context-path: /travelPackageService
+    context-path: /userService
